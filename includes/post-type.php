@@ -52,7 +52,7 @@ function wpcoupon_post_types_init() {
      * Add new taxonomy, make it hierarchical (like categories)
      */
     $labels = array(
-        'name'              => _x( 'Categories', 'taxonomy general name', 'wp-coupon' ),
+        'name'              => _x( 'Coupon Categories', 'taxonomy general name', 'wp-coupon' ),
         'singular_name'     => _x( 'Coupon Category', 'taxonomy singular name', 'wp-coupon' ),
         'search_items'      => __( 'Search Coupon Categories', 'wp-coupon' ),
         'all_items'         => __( 'All Coupon Categories', 'wp-coupon' ),
@@ -71,6 +71,9 @@ function wpcoupon_post_types_init() {
         'show_ui'           => true,
         'show_admin_column' => true,
         'query_var'         => false,
+        'show_in_menu'      => true,
+        'show_in_nav_menus' => true,
+        'show_in_quick_edit' => true,
         'rewrite'           => array( 'slug' => 'coupon-category' ),
     );
 
@@ -83,7 +86,7 @@ function wpcoupon_post_types_init() {
      * Add new taxonomy, make it hierarchical (like categories)
      */
     $labels = array(
-        'name'              => _x( 'Store', 'taxonomy general name', 'wp-coupon' ),
+        'name'              => _x( 'Coupon Stores', 'taxonomy general name', 'wp-coupon' ),
         'singular_name'     => _x( 'Coupon Store', 'taxonomy singular name', 'wp-coupon' ),
         'search_items'      => __( 'Search Stores', 'wp-coupon' ),
         'all_items'         => __( 'All Stores', 'wp-coupon' ),
@@ -103,6 +106,9 @@ function wpcoupon_post_types_init() {
         'show_ui'           => true,
         'show_admin_column' => true,
         'query_var'         => true,
+        'show_in_menu'      => true,
+        'show_in_nav_menus' => true,
+        'show_in_quick_edit'=> true,
         'rewrite'           => array( 'slug' => 'store' ),
     );
 
